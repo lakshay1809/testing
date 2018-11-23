@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<script>
+// function display(){
+// 	alert("successfully submitted!!")
+// }
+function validateForm()
+{
+    var x = document.getElementById("username").value;
+    var y = document.getElementById("password").value;
+    if (x == "" || y == "") 
+    {
+        alert("All fields are madatory");
+        return false;
+    }
+        else
+        {
+        	alert("successfully submitted!!")
+        	return false;
+        }
+    
+}
+function clr(){
+	alert("fields cleared");
+}
+</script>
+</head>
+<body>
+<form name="table" >
+<table border="1" align="center" >
+
+<th><b><center>Login Form</center> </b></th>
+<tr>
+<td>
+Username: <input type="text" id="username" placeholder="username" /><br></td></tr>
+<tr>
+<td>
+Password: <input type="password" id="password" placeholder="password" /></td><br>
+</tr>
+<tr>
+<td align="center">
+<input type="submit" name="submit" value="Submit" onclick="validateForm()">&nbsp&nbsp&nbsp&nbsp
+<input type="reset" name="reset" value="Reset" onclick="clr()">
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
